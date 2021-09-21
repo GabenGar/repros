@@ -1,5 +1,6 @@
 @use "../styles/variables" as *;
 
 .block {
+  width: $width-phone;
   background-color: var(--colour0-secondary);
 }

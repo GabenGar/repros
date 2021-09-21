@@ -1,5 +1,6 @@
 @use "../styles/variables" as *;
 
 .block {
+  width: $width-feature;
   background-color: var(--colour0-primary);
 }
