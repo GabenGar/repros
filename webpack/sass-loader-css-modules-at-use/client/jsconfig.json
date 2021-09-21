@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#configs/*": ["./configs/*"],
+      "#components": ["./src/components/_index.js"],
+      "#pages": ["./src/pages/_index.js"],
+      "#assets/*": ["./src/assets/*"],
+      "#scripts/*": ["./src/scripts/*"],
+      "#styles/*": ["./src/styles/*"],
+      "#views/*": ["./src/views/*"]
+    },
+    "module": "commonJS",
+    "target": "es2015",
+    "moduleResolution": "node",
+    "lib": ["es5"]
+  },
+  "exclude": ["node_modules", "dist", "dev", "src"]
+}

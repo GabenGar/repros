@@ -1,0 +1,42 @@
+// screen widths
+$width-feature: 240px;
+$width-mobile: 360px;
+$width-phone: 480px;
+$width-tablet: 768px;
+$width-laptop: 1280px;
+$width-desktop: 1920px;
+
+// sizes for borders/padding/margins/gaps
+$size-nano: 0.0625em;
+$size-thin: 0.125em;
+$size-little: 0.25em;
+$size-small: 0.5em;
+$size-normal: 1em;
+$size-big: 2em;
+$size-large: 3em;
+
+$min-button-width: 34px;
+$min-button-height: 34px;
+
+:root {
+  // base colours
+  --colour0-primary: hsl(0, 0%, 5%);
+  --colour0-secondary: hsl(0, 0%, 30%);
+  --colour0-tertiary: hsla(0, 0%, 40%);
+  --colour0-primary-transparent: hsl(0, 0%, 5%, 60%);
+  --colour0-secondary-transparent: hsla(0, 0%, 30%, 40%);
+  --colour0-tertiary-transparent: hsla(0, 0%, 40%, 40%);
+  --colour1-primary: hsl(0, 0%, 100%);
+  --colour1-secondary: hsl(0, 0%, 90%);
+  --colour1-secondary-transparent: hsla(0, 0%, 90%, 50%);
+  --colour1-tertiary: hsla(0, 0%, 80%);
+
+  --active-colour1-primary: hsl(184, 100%, 34%);
+  --active-colour2-primary: hsl(170, 80%, 60%);
+  
+  --positive-colour1-primary: hsl(120, 75%, 50%);
+
+  // durations
+  --duration-fast: 250ms;
+  --duration-global: var(--duration-fast);
+}

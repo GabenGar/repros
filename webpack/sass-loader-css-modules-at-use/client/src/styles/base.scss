@@ -1,0 +1,76 @@
+@use "variables" as *;
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: var(--colour0-primary);
+  background-color: var(--colour1-tertiary);
+  padding: 0;
+  margin: 0;
+}
+
+.react-root {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 0 $size-normal;
+}
+
+h1 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 0.5em;
+}
+
+
+p, 
+li, 
+dt, 
+dd {
+  line-height: 1.5;
+}
+
+p {
+}
+
+label {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+// doesn't work
+// option {
+//   cursor: pointer;
+// }
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

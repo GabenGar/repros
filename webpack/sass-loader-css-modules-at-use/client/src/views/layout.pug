@@ -1,0 +1,70 @@
+doctype html
+html(
+  lang="en" 
+  class="no-js"
+  prefix="og: https://ogp.me/ns#"
+)
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(
+      name="viewport", 
+      content="width=device-width, initial-scale=1.0"
+    )
+    script(type="module").
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+    
+    block meta
+      meta(name="description" content="Page description")
+      link(rel="canonical" href= canonicalURL)
+      link(rel="icon" href="/public/favicon.ico")
+      //- link(rel="icon" href="/favicon.svg" type="image/svg+xml")
+      //- link(rel="apple-touch-icon" href="/apple-touch-icon.png")
+      //- link(rel="manifest" href="/my.webmanifest")
+      meta(name="theme-color" content="#FF00FF")
+      
+    block openGraph
+      meta(property="og:type" content="website")
+      meta(property="og:url" content= canonicalURL)
+      meta(property="og:title" content= title)
+      //- meta(property="og:description" content="Page description")
+      //- meta(property="og:image" content="https://www.mywebsite.com/image.jpg")
+      //- meta(property="og:image:alt" content="Image description")
+      //- meta(property="og:locale" content="en_GB")
+      
+    block twitter
+      //- meta(name="twitter:card" content="summary_large_image")
+
+    block bundlerOutput
+      //- a hack until writing custom loader
+      <% for (var css in htmlWebpackPlugin.files.css) { %>
+      link(
+        rel="stylesheet",
+        href="<%= htmlWebpackPlugin.files.css[css] %>",
+        nonce= cspNonce
+      )
+      <% } %>
+      <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+      script(
+        type="module",
+        src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>",
+        nonce= cspNonce
+      )
+      <% } %>
+      <% for (var js in htmlWebpackPlugin.files.js) { %>
+      script(
+        type="module"
+        src="<%= htmlWebpackPlugin.files.js[js] %>" 
+        nonce= cspNonce
+      )
+      <% } %>
+
+    block styles
+    
+    block scripts
+
+    block pageTitle
+      title #{title}
+  body  
+    block content

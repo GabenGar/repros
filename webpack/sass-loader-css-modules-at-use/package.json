@@ -1,0 +1,24 @@
+{
+  "name": "gg-test",
+  "version": "0.0.1",
+  "description": "gg-test",
+  "engines": {
+    "node": ">=12.19.0"
+  },
+  "engineStrict": true,
+  "private": true,
+  "keywords": [],
+  "author": "gabengar",
+  "license": "MIT",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "start": "cd server && npm start",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently --kill-others 'npm:dev:server' 'npm:dev:client'",
+    "build": "cd client && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}

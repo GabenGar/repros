@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#api": ["./api/_index.js"],
+      "#components": ["./components/_index.js"],
+      "#components/fancy": ["./components/fancy/_index.js"],
+      "#components/forms": ["./components/forms/_index.js"],
+      "#pages": ["./pages/_index.js"],
+      "#assets": ["./assets/_index.js"],
+      "#assets/*": ["./assets/*"],
+      // "#scripts/*": "./src/scripts/*",
+      // "#styles/*": "./src/styles/*",
+      // "#views/*": "./src/views/*"
+    },
+    "checkJs": true,
+    "lib": ["dom", "dom.iterable"],
+    "jsx": "react"
+  }
+}
