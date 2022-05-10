@@ -68,7 +68,7 @@ export const getStaticProps: GetStaticProps<IProps> = async ({ locale }) => {
     pages
   }
 
-  console.log(JSON.stringify(props))
+  // console.log(JSON.stringify(props))
   return {
     props,
     revalidate: DAY
