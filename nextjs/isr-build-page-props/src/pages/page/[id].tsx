@@ -12,7 +12,7 @@ interface IPage {
 }
 
 interface IProps extends IBasePageProps {
-  pages: IPage[]
+  page: IPage
 }
 
 interface IParams extends ParsedUrlQuery {
@@ -24,12 +24,14 @@ interface IStaticPath {
   locale: string
 }
 
-function Page({ locale, pages }: InferGetStaticPropsType<typeof getStaticProps>) {
+function Page({ locale, page }: InferGetStaticPropsType<typeof getStaticProps>) {
   return <div>
     <p>{locale}</p>
-    <ul>
-      {pages.map((page) => <li key={page.id} >{page.description}</li>)}
-    </ul>
+    <article>
+      <header>{page.id}</header>
+      <section>{page.description}</section>
+    </article>
+
   </div>
 }
 
@@ -62,10 +64,13 @@ export const getStaticPaths: GetStaticPaths<IParams> = async ({ locales }) => {
   }
 }
 
-export const getStaticProps: GetStaticProps<IProps> = async ({ locale }) => {
+export const getStaticProps: GetStaticProps<IProps, IParams> = async ({ locale, params }) => {
+  const pageID = Number(params!.id)
+  const page = pages.find((page) => page.id === pageID)!
+
   const props = {
     locale: locale!,
-    pages
+    page
   }
 
   // console.log(JSON.stringify(props))
