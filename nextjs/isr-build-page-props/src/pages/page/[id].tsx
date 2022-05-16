@@ -1,4 +1,5 @@
 import faker from '@faker-js/faker/locale/en';
+import { useRouter } from 'next/router';
 
 import type { GetStaticProps, GetStaticPaths, GetStaticPathsResult, InferGetStaticPropsType } from 'next'
 import type { ParsedUrlQuery } from "querystring"
@@ -25,6 +26,10 @@ interface IStaticPath {
 }
 
 function Page({ locale, page }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const router = useRouter();
+
+  if (router.isFallback) return <div>Loading...</div>;
+
   return <div>
     <p>{locale}</p>
     <article>
