@@ -1,0 +1,20 @@
+{
+  "name": "json-schema-experimental-module",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hyperjump/json-schema": "^1.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "typescript": "^5.1.6"
+  }
+}
