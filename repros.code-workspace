@@ -2,9 +2,13 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "./nodejs/json-schema-to-typescript-file-path"
 		}
 	],
 	"settings": {
 		"editor.tabSize": 2,
+		"typescript.tsdk": "json-schema-to-typescript-file-path\\node_modules\\typescript\\lib",
 	}
 }
