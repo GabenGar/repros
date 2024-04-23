@@ -1,0 +1,54 @@
+{
+  "folders": [
+    {
+      "name": "todos",
+      "path": "."
+    },
+    {
+      "name": "frontend",
+      "path": "apps/frontend"
+    },
+    {
+      "name": "codegen",
+      "path": "packages/codegen"
+    },
+    {
+      "name": "schema",
+      "path": "packages/schema"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/.git": true,
+      "**/.hg": true,
+      "**/.svn": true,
+      "**/CVS": true,
+      "**/node_modules": true,
+      "**/Thumbs.db": true,
+      "codegen": true,
+      "frontend": true,
+      "schema": true,
+      "**/.turbo": true
+      // "**/.vscode": true
+    },
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/.hg/store/**": true,
+      "**/node_modules/*/**": true
+    },
+    "files.associations": {
+      "*code-workspace.example": "jsonc",
+      ".env.*": ".env"
+    },
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.preferences.preferTypeOnlyAutoImports": true
+  },
+  "extensions": {
+    "recommendations": [
+      "eamodio.gitlens",
+      "dotenv.dotenv-vscode"
+    ]
+  }
+}

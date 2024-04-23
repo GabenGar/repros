@@ -1,0 +1,27 @@
+@use "../../styles/sass/variables.scss" as *;
+
+.block {
+  display: grid;
+  gap: $size-small;
+  max-width: $width-phone;
+  border-radius: $radius-normal;
+  border: $size-thin solid var(--colour-text-primary);
+  padding: $size-normal;
+  margin: 0 auto;
+
+  transition-property: border;
+  transition-duration: var(--duration-global);
+
+  @media (min-width: $width-laptop) {
+    max-width: calc(#{$width-phone} * 1.1);
+  }
+}
+
+.form {
+  display: none;
+}
+
+.submit {
+  display: grid;
+  justify-items: flex-end;
+}
