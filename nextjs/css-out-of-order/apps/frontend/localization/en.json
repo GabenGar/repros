@@ -1,0 +1,231 @@
+{
+  "layout": {
+    "description": "Manage tasks in browser",
+    "source_code": "Source Code"
+  },
+  "common": {
+    "form": {
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "pagination": {
+      "first": "First",
+      "previous": "Previous",
+      "current": "Current",
+      "next": "Next",
+      "last": "Last",
+      "out_of": "out of"
+    },
+    "list": {
+      "no_items": "No items found.",
+      "Select": "Select",
+      "Reset": "Reset"
+    },
+    "entity": {
+      "Copy": "Copy",
+      "Copied": "Copied"
+    },
+    "datetime": {
+      "Copy": "Copy",
+      "Copied": "Copied"
+    }
+  },
+  "pages": {
+    "qr_code_reader": {
+      "title": "QR code reader",
+      "heading": "QR Code Reader",
+      "description": "Read any QR code from a file and view its contents",
+      "result": "Result",
+      "no_result": "Nothing",
+      "form": {
+        "file_label": "Click to upload a file",
+        "scan": "Scan",
+        "scanning": "Scanning..."
+      }
+    },
+    "places": {
+      "title": "Places",
+      "heading": "Places"
+    },
+    "place": {
+      "title": "Place",
+      "heading": "Place"
+    },
+    "place_edit": {
+      "title": "Edit Place",
+      "heading": "Edit Place"
+    },
+    "stats_places": {
+      "title": "Stats of places",
+      "heading": "Stats of Places",
+      "description": "View the stats of places.",
+      "stats": {
+        "All": "All",
+        "Eventless": "Eventless"
+      }
+    },
+    "account": {
+      "title": "Account",
+      "heading": "Account",
+      "Compatibility": "Compatibility",
+      "Supported": "Supported",
+      "Not supported": "Not supported",
+      "Data": "Data",
+      "Export": "Export",
+      "Import": "Import",
+      "Export Data": "Export Data",
+      "Click to upload a file": "Click to upload a file",
+      "Import data": "Import data",
+      "Importing data...": "Importing data...",
+      "Settings": "Settings",
+      "Update": "Update",
+      "Updating...": "Updating...",
+      "logger": {
+        "Log level": "Log level",
+        "levels": {
+          "Debug": "Debug",
+          "Logs": "Logs",
+          "Information": "Information",
+          "Warnings": "Warnings",
+          "Errors": "Errors"
+        }
+      }
+    },
+    "url-viewer": {
+      "title": "URL Viewer",
+      "heading": "URL Viewer",
+      "URL": "URL",
+      "Parse": "Parse",
+      "Parsing...": "Parsing...",
+      "URLs": "URLs",
+      "Origin Details": "Origin Details",
+      "Pathname Details": "Pathname Details",
+      "Search Parameters Details": "Search Parameters Details",
+      "Fragment Details": "Fragment Details",
+      "No URL selected.": "No URL selected.",
+      "Full URL": "Full URL",
+      "Transformed URL":"Transformed URL",
+      "Origin": "Origin",
+      "Protocol": "Protocol",
+      "Username": "Username",
+      "Password": "Password",
+      "Host": "Host",
+      "Hostname": "Hostname",
+      "Port": "Port",
+      "Pathname": "Pathname",
+      "Search": "Search",
+      "Search parameters": "Search parameters",
+      "Hash": "Hash"
+    }
+  },
+  "home": {
+    "title": "Welcome!",
+    "heading": "Welcome!",
+    "link_tasks": "Tasks",
+    "link_qr_code": "QR code reader",
+    "link_places": "Places",
+    "link_url_viewer": "URL Viewer",
+    "link_account": "Account"
+  },
+  "todos": {
+    "title": "Tasks",
+    "heading": "Tasks",
+    "new_todo": {
+      "title": "Title",
+      "description": "Description",
+      "status": "Status",
+      "add": "Add",
+      "adding": "Adding...",
+      "place": "Place"
+    },
+    "status": "Status",
+    "status_values": {
+      "pending": "Pending",
+      "in-progress": "In progress",
+      "finished": "Finished",
+      "failed": "Failed"
+    },
+    "export_tasks": "Export tasks",
+    "click_to_file": "Click to upload a file",
+    "import_tasks": "Import tasks",
+    "importing_tasks": "Importing tasks...",
+    "details": "Details",
+    "search": "Search",
+    "add": "Add",
+    "search_tasks": {
+      "query": "Query",
+      "Place": "Place",
+      "search": "Search",
+      "searching": "Searching..."
+    },
+    "edit": "Edit",
+    "editing": "Editing..."
+  },
+  "task": {
+    "title": "Task",
+    "heading": "Task",
+    "description": "Description",
+    "no_description": "No description provided",
+    "creation_date": "Creation date",
+    "last_updated": "Last updated",
+    "edit": "Edit",
+    "place": "Place",
+    "place_unknown": "Unknown",
+    "status": "Status",
+    "status_values": {
+      "pending": "Pending",
+      "in-progress": "In progress",
+      "finished": "Finished",
+      "failed": "Failed"
+    },
+    "actions": {
+      "fail": "Fail",
+      "delay": "Delay",
+      "start": "Start",
+      "complete": "Complete"
+    },
+    "delete": "Delete",
+    "details": "Details"
+  },
+  "stats_tasks": {
+    "title": "Task stats",
+    "heading": "Task Stats",
+    "description": "Rundown of the tasks",
+    "status_values": {
+      "all": "All",
+      "pending": "Pending",
+      "in-progress": "In progress",
+      "finished": "Finished",
+      "failed": "Failed"
+    }
+  },
+  "task_edit": {
+    "title": "Edit task",
+    "heading": "Edit Task",
+    "description": "Edit task details.",
+    "task": "Task",
+    "Delete": "Delete"
+  },
+  "place": {
+    "title": "Title",
+    "description": "Description",
+    "no_description": "No description provided",
+    "created_at": "Date of creation",
+    "updated_at": "Last updated",
+    "add": "Add place",
+    "adding": "Adding place...",
+    "details": "Details",
+    "Place": "Place",
+    "Edit": "Edit",
+    "Tasks": "Tasks",
+    "edit": {
+      "Confirm changes": "Confirm changes",
+      "Applying changes...": "Applying changes..."
+    },
+    "search": {
+      "Query": "Query",
+      "Search": "Search",
+      "Searching...": "Searching..."
+    }
+  }
+}

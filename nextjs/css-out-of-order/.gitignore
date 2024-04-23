@@ -1,0 +1,8 @@
+# turborepo files
+.turbo
+
+# VSCode workspace file
+*.code-workspace
+
+# Dependency directories
+node_modules/

@@ -1,0 +1,28 @@
+@use "../../styles/sass/variables.scss" as *;
+
+.block {
+}
+
+.id {
+  justify-self: stretch;
+}
+
+.footer {
+  gap: $size-normal;
+}
+
+.actions {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: $size-normal;
+  width: 100%;
+}
+
+.action {
+  width: 6em;
+}
+
+.delete {
+  margin-left: auto;
+}

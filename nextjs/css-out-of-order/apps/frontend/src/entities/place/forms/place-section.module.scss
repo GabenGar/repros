@@ -1,0 +1,35 @@
+@use "../../../styles/sass/variables.scss" as *;
+
+.block {
+}
+
+.section {
+  display: grid;
+  gap: $size-small;
+}
+
+.list {
+  align-items: stretch;
+}
+
+.item {
+  display: grid;
+  grid-template:
+    "title select" 1fr
+    "id select" 1fr
+    / 1fr 6em;
+}
+
+.title {
+  grid-area: title;
+}
+
+.id {
+  grid-area: id;
+  display: inline-flex;
+}
+
+.select {
+  grid-area: select;
+  align-self: center;
+}
