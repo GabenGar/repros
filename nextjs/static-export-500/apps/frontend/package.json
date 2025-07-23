@@ -1,0 +1,45 @@
+{
+  "name": "frontend",
+  "version": "0.39.0",
+  "description": "NextJS frontend for todo list.",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "start": "serve ./dist -p 9001 --no-clipboard --no-port-switching",
+    "lint": "next lint",
+    "format": "prettier --log-level=warn ./src --write",
+    "dev": "next dev --port 8001"
+  },
+  "imports": {
+    "#pages/types": "./src/app/types.ts",
+    "#lib/*": "./src/lib/*/index.ts",
+    "#server": "./src/server/index.ts",
+    "#server/*": "./src/server/*/index.ts",
+    "#hooks": "./src/hooks/index.ts",
+    "#components": "./src/components/index.ts",
+    "#components/types": "./src/components/types.ts",
+    "#components/*": "./src/components/*/index.ts"
+  },
+  "dependencies": {
+    "@repo/ui": "*",
+    "bcp-47": "^2.1.0",
+    "clsx": "^2.1.1",
+    "iso-639-1": "^3.1.5",
+    "nanoid": "^5.1.5",
+    "next": "15.4.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@types/react": "^19.1.8",
+    "eslint": "9.31.0",
+    "eslint-config-next": "15.4.2",
+    "eslint-config-prettier": "^10.1.5",
+    "prettier": "3.6.2",
+    "sass": "^1.89.2",
+    "serve": "^14.2.4",
+    "typescript": "^5.8.3"
+  }
+}

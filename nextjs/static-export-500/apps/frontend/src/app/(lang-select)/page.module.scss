@@ -1,0 +1,17 @@
+@use "@repo/ui/styles/sass/variables" as *;
+
+.list {
+  align-items: stretch;
+}
+
+.item {
+  padding: $size-small;
+}
+
+.link {
+  width: 100%;
+}
+
+.language {
+  font-weight: bold;
+}

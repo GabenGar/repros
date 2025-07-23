@@ -1,0 +1,18 @@
+# VSCode workspace file
+*.code-workspace
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# dotenv environment variable files
+!.env
+.env.*.local
+.env.local
+
+# Next.js build output
+.next
+out
+dist

@@ -1,0 +1,6 @@
+@use "@repo/ui/styles/sass/variables" as *;
+
+.block {
+  display: grid;
+  gap: $size-normal;
+}

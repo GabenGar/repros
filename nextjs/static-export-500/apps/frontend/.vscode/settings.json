@@ -1,0 +1,16 @@
+{
+  "dotenv.enableSecretpeeking": false,
+  "files.associations": {
+    ".env.*": "dotenv"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+
+}
