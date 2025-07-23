@@ -1,0 +1,65 @@
+:root {
+  // text colours
+  --colour-text-primary: hsl(0, 0%, 10%);
+  --colour-text-transparent: hsl(0, 0%, 10%, 60%);
+  --colour-text-secondary: hsl(0, 0%, 30%);
+  --colour-text-secondary-transparent: hsla(0, 0%, 30%, 40%);
+  --colour-text-tertiary: hsla(0, 0%, 40%);
+  --colour-text-tertiary-transparent: hsla(0, 0%, 40%, 40%);
+
+  // background colours
+  --colour-background-primary: hsl(0, 0%, 98%);
+  --colour-background-primary-transparent: hsla(0, 0%, 98%, 50%);
+  --colour-background-secondary: hsl(0, 0%, 90%);
+  --colour-background-secondary-transparent: hsla(0, 0%, 90%, 50%);
+  --colour-background-tertiary: hsla(0, 0%, 80%);
+  --colour-background-tertiary-transparent: hsla(0, 0%, 80%, 50%);
+
+  // action colours
+  --submit-colour-text-primary: hsl(240, 100%, 50%);
+  --submit-colour-text-secondary: hsl(240, 70%, 50%);
+  --submit-colour-text-tertiary: hsl(240, 60%, 60%);
+  --submit-colour-background-primary: hsl(220, 100%, 85%);
+  --submit-colour-background-secondary: hsl(220, 100%, 90%);
+  --submit-colour-background-tertiary: hsl(220, 100%, 95%);
+
+  --positive-colour-text-primary: hsl(120, 100%, 20%);
+  --positive-colour-text-secondary: hsl(120, 80%, 25%);
+  --positive-colour-text-tertiary: hsl(120, 60%, 30%);
+  --positive-colour-background-primary: hsl(120, 100%, 75%);
+  --positive-colour-background-secondary: hsl(120, 100%, 85%);
+  --positive-colour-background-tertiary: hsl(120, 100%, 90%);
+
+  --warning-colour-text-primary: hsl(60, 100%, 35%);
+  --warning-colour-text-secondary: hsl(60, 80%, 40%);
+  --warning-colour-text-tertiary: hsl(60, 60%, 45%);
+  --warning-colour-background-primary: hsl(60, 100%, 80%);
+  --warning-colour-background-secondary: hsl(60, 100%, 85%);
+  --warning-colour-background-tertiary: hsl(60, 100%, 90%);
+
+  --negative-colour-text-primary: hsl(0, 100%, 30%);
+  --negative-colour-text-secondary: hsl(0, 100%, 35%);
+  --negative-colour-text-tertiary: hsl(0, 80%, 40%);
+  --negative-colour-background-primary: hsl(0, 100%, 85%);
+  --negative-colour-background-secondary: hsl(0, 100%, 90%);
+  --negative-colour-background-tertiary: hsl(0, 100%, 95%);
+
+  // links
+  --anchour-colour-text-primary: hsl(240, 100%, 40%);
+  --anchour-colour-text-secondary: hsla(230, 70%, 40%);
+  --anchour-colour-text-tertiary: hsla(230, 60%, 40%);
+  --anchour-colour-background-primary: hsl(210, 100%, 80%);
+  --anchour-colour-background-secondary: hsla(210, 100%, 85%);
+  --anchour-colour-background-tertiary: hsla(210, 100%, 90%);
+
+  --anchour-internal-colour-text-primary: hsl(340, 100%, 20%);
+  --anchour-internal-colour-text-secondary: hsla(340, 80%, 20%);
+  --anchour-internal-colour-text-tertiary: hsla(340, 60%, 15%);
+  --anchour-internal-colour-background-primary: hsl(340, 100%, 80%);
+  --anchour-internal-colour-background-secondary: hsla(340, 100%, 85%);
+  --anchour-internal-colour-background-tertiary: hsla(340, 100%, 90%);
+
+  // durations
+  --duration-fast: 250ms;
+  --duration-global: var(--duration-fast);
+}

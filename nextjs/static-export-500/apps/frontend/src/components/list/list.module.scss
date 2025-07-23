@@ -1,0 +1,21 @@
+@use "@repo/ui/styles/sass/variables" as *;
+
+.block {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: $size-small;
+}
+
+.alternating {
+  & > * {
+    &:nth-child(odd) {
+      background-color: var(--colour-background-secondary-transparent);
+    }
+
+    &:nth-child(even) {
+      background-color: var(--colour-background-tertiary-transparent);
+    }
+  }
+}
