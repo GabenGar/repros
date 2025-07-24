@@ -1,6 +1,3 @@
-# configs
-/config
-
 # typescript build cache
 /tsconfig.node.tsbuildinfo
 /tsconfig.vite.tsbuildinfo
