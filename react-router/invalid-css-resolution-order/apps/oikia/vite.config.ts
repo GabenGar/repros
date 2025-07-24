@@ -4,13 +4,6 @@ import { defineConfig, type UserConfig } from "vite";
 const config = defineConfig(({ isSsrBuild }) => {
   const finalConfig: UserConfig = {
     plugins: [reactRouter()],
-    css: {
-      preprocessorOptions: {
-        scss: {
-          api: "modern",
-        },
-      },
-    },
     build: {
       sourcemap: true,
       rollupOptions: {
