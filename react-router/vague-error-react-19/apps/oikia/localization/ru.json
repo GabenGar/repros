@@ -1,0 +1,30 @@
+{
+  "common": {
+    "Source Code": "Исходный код",
+    "Error": "Ошибка",
+    "An unexpected error occurred.": "Произошла непредвиденная ошибка.",
+    "The requested page could not be found.": "Запрашиваемая страница не найдена.",
+    "Initializing...": "Загружаем...",
+    "Submitting...": "Отправляем...",
+    "Name": "Название",
+    "Message": "Сообщение",
+    "Ready to submit.": "Готовы к отправке.",
+    "Submit": "Отправить",
+    "Reset": "Сбросить",
+    "Unknown method": "Неизвестный метод",
+    "Success element is unsuccessful.": "Успешный элемент провален.",
+    "Copy": "Копировать",
+    "Copied": "Скопировано",
+    "Client language": "Клиентский язык"
+  },
+  "pages": {
+    "home": {
+      "Welcome": "Добро пожаловать",
+      "Authentication": "Аутентификация",
+      "Account": "Учётная запись",
+      "Log out": "Выйти",
+      "Register": "Зарегистрироваться",
+      "Log in": "Войти"
+    }
+  }
+}
