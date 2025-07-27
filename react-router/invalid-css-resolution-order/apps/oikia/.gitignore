@@ -1,0 +1,10 @@
+# typescript build cache
+/tsconfig.node.tsbuildinfo
+/tsconfig.vite.tsbuildinfo
+
+.DS_Store
+/node_modules/
+
+# React Router
+/.react-router/
+/build/

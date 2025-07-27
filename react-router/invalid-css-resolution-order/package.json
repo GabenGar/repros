@@ -1,0 +1,29 @@
+{
+  "name": "css-repro",
+  "version": "0.0.1",
+  "keywords": [
+    "NextJS"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true,
+  "author": "GabenGar",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "dev": "turbo run dev"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.2",
+    "turbo": "2.5.5"
+  },
+  "packageManager": "npm@8.7.0"
+}

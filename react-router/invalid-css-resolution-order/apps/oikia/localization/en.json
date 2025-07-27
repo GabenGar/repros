@@ -1,0 +1,30 @@
+{
+  "common": {
+    "Source Code": "Source Code",
+    "Error": "Error",
+    "An unexpected error occurred.": "An unexpected error occurred.",
+    "The requested page could not be found.": "The requested page could not be found.",
+    "Initializing...": "Initializing...",
+    "Submitting...": "Submitting...",
+    "Name": "Name",
+    "Message": "Message",
+    "Ready to submit.": "Ready to submit.",
+    "Submit": "Submit",
+    "Reset": "Reset",
+    "Unknown method": "Unknown method",
+    "Success element is unsuccessful.": "Success element is unsuccessful.",
+    "Copy": "Copy",
+    "Copied": "Copied",
+    "Client language": "Client language"
+  },
+  "pages": {
+    "home": {
+      "Welcome": "Welcome",
+      "Authentication": "Authentication",
+      "Account": "Account",
+      "Log out": "Log out",
+      "Register": "Register",
+      "Log in": "Log in"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use "../styles/sass/variables.scss" as *;
+
+.block {
+  padding-left: $size-normal;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: $size-small;
+  list-style-position: inside;
+}
+
+.unordered {
+  list-style-type: disc;
+}
+
+.ordered {
+  list-style-type: decimal-leading-zero;
+}
