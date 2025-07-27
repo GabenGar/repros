@@ -3,8 +3,6 @@ import compression from "compression";
 import express from "express";
 import morgan from "morgan";
 
-import { parseConfig } from "./scripts/lib/parse-configuration.mjs";
-
 // Short-circuit the type-checking of the built output.
 const BUILD_PATH = "./build/server/index.js";
 /**
@@ -27,15 +25,9 @@ if (environment !== "development" && environment !== "production") {
 process.env.NODE_ENV = environment;
 
 const isDevelopment = environment === "development";
-const config = await parseConfig(isDevelopment);
 
-// Setting it in such a hacky way to avoid reparsing
-// within react router code
-const configSymbol = Symbol.for("server-config");
-// @ts-expect-error
-globalThis[configSymbol] = config;
 
-const PORT = config.server.port;
+const PORT = isDevelopment ? 8002 : 9002;
 
 const app = express();
 
