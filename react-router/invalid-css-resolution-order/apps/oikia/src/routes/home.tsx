@@ -1,3 +1,4 @@
+import { href } from "react-router";
 import { Page } from "@repo/ui/pages";
 import { Overview, OverviewHeader } from "@repo/ui/articles";
 import { List, ListItem } from "@repo/ui/lists";
@@ -9,6 +10,9 @@ import type {
 import { createMetaTitle } from "#lib/router";
 import { getLanguage } from "#server/lib/router";
 import { getTranslation } from "#server/localization";
+import { LinkButton } from "#components/link";
+
+import styles from "./home.module.scss";
 
 import type { Route } from "./+types/home";
 
@@ -40,6 +44,14 @@ function HomePage({ loaderData }: Route.ComponentProps) {
                   dValue={
                     <List>
                       <ListItem>Test 1</ListItem>
+                      <ListItem className={styles.item}>
+                        <LinkButton
+                          className={styles.link}
+                          href={href("/:language", { language })}
+                        >
+                          Test link button
+                        </LinkButton>
+                      </ListItem>
                     </List>
                   }
                 />
